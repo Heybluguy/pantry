@@ -1,9 +1,11 @@
 require './lib/pantry'
+require './lib/recipe'
 require 'minitest/autorun'
 require 'minitest/pride'
 
 class PantryTest < Minitest::Test
   attr_reader :pantry
+
 
   def setup
     @pantry = Pantry.new
@@ -29,9 +31,7 @@ class PantryTest < Minitest::Test
     assert_equal 30, pantry.stock_check("Cheese")
   end
 
-  def test_can_build_a_recipe
 
-  end
 
 
 
