@@ -7,7 +7,6 @@ class PantryTest < Minitest::Test
   attr_reader :pantry,
               :r
 
-
   def setup
     @pantry = Pantry.new
     @r      = Recipe.new("Cheese Pizza")
@@ -91,6 +90,5 @@ class PantryTest < Minitest::Test
 
     assert_equal (["Pickles", "Peanuts"]), pantry.what_can_i_make?
   end
-
 
 end
