@@ -48,8 +48,9 @@ class Pantry
   end
 
   def what_can_i_make?
+    
     @cookbook.each do |recipe|
-      if @stock == recipe.ingredients
+      if @stock.include?(recipe.ingredients)
         recipe.name
       end
     end
