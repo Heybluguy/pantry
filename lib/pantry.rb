@@ -27,10 +27,10 @@ class Pantry
 
   def add_to_shopping_list(recipe)
     recipe.ingredients.each do |ingredient, quantity|
-      if stock[ingredient]
-        stock[ingredient] += quantity
+      if shopping_list[ingredient]
+        shopping_list[ingredient] += quantity
       else
-        stock[ingredient] = quantity
+        shopping_list[ingredient] = quantity
       end
     end
   end
