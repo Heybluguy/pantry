@@ -37,7 +37,9 @@ class Pantry
 
 
   def print_shopping_list
-  
+    list = ""
+    @shopping_list.each {|ingredient, quantity| list << "* #{ingredient}: #{quantity}\n"}
+    list.chop
   end
 
 end
