@@ -6,7 +6,8 @@ class Pantry
   end
 
   def stock_check(item)
-    
+     variable = stock[item]
+     0 if variable == nil
   end
 
 
