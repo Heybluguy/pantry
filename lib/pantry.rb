@@ -1,4 +1,3 @@
-require 'pry'
 class Pantry
   attr_reader :stock,
               :shopping_list,
@@ -11,7 +10,7 @@ class Pantry
   end
 
   def stock_check(item)
-     quantity = @stock[item]
+    quantity = @stock[item]
     if quantity == nil
       quantity = 0
     end
@@ -48,7 +47,6 @@ class Pantry
   end
 
   def what_can_i_make?
-    
     @cookbook.each do |recipe|
       if @stock.include?(recipe.ingredients)
         recipe.name
